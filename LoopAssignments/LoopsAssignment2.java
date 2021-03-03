@@ -14,7 +14,7 @@ public class LoopsAssignment2 {
 			x++;
 		}
 	}
-	private static String reverse(String input) {
+	public static String reverse(String input) {
 		if (input.length() <= 1) {			
 			return input;
 		}
