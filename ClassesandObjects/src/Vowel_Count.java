@@ -1,9 +1,9 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Strings {
+public class Vowel_Count {
 
 	public static void main(String[] args) {
+		//1)Take a string input from user and find the count of vowels in it.
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter string:");
 		String n = sc.nextLine();
