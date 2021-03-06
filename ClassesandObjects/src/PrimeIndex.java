@@ -32,5 +32,4 @@ public class PrimeIndex {
 			return false;
 		}
 	}
-
 }
