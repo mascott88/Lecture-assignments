@@ -22,12 +22,15 @@ public class Regex {
 		}
 		System.out.println("SSN Valid\n");
 
-		System.out.println("Enter Driver's License# (AA123456):");
+		System.out.println("Enter Ohio Driver's License#:");
+		// ohio driver's license format: 1Alpha+4-8Numeric || 2Alpha+3-7Numeric || 8Numeric
 		String dlNum = sc.nextLine();
-		while (!dlNum.toUpperCase().matches("[A-Z]{2}[0-9]{6}")) {
+		String ohioDL = "[A-Za-z]{4,8}|[A-Za-z]{2}[0-9]{3,7}|[0-9]{8}";
+		while(!dlNum.matches(ohioDL)) {
 			System.out.println("Driver's License Invalid");
-			dlNum = sc.nextLine();
-		}
-		System.out.println("Driver's License Valid\n");
+			dlNum = sc.nextLine();			
+		} 
+		System.out.println("Driver's License Valid\n");	
+		sc.close();
 	}
 }
