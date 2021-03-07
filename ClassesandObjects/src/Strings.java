@@ -29,15 +29,16 @@ public class Strings {
 		int minWordLetters = arr[0].length();
 		String maxWord = "";
 		String minWord = "";
+		int middle = 0;
 
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i].length() % 2 == 0) {
 				sb2.append(Character.toUpperCase(arr[i].charAt(0))).append(arr[i].substring(1)).append(" ");
 			} else {
-				// how to get middle character uppercase ???
-				sb2.append(arr[i].substring(0, arr[i].length() - 1))
-						.append(Character.toUpperCase(arr[i].charAt(arr[i].length() - 1))).append(" ");
-
+				middle = (arr[i].length()%2)+(arr[i].length()/2);
+				System.out.println(sb2.append(arr[i].substring(0, middle-1))
+						.append(Character.toUpperCase(arr[i].charAt(arr[i].length()- middle))).append(arr[i].substring(middle)).append(" "));
+			
 			}
 			if (arr[i].length() > maxWordLetters) {
 				maxWordLetters = arr[i].length();
@@ -51,5 +52,6 @@ public class Strings {
 		System.out.println(sb2.toString().trim());
 		System.out.println("Word with Maximum letters(" + maxWordLetters + "): \"" + maxWord + "\"");
 		System.out.println("Word with Minimum letters(" + minWordLetters + ") \"" + minWord + "\"");
+		sc.close();
 	}
 }
