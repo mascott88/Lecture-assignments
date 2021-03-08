@@ -14,6 +14,7 @@ public class Vowel_Count {
 					|| n.charAt(i) == 'O' || n.charAt(i) == 'U')
 				count++;	
 		}
-		System.out.format("User inputted string contains %d vowels.", count);
+		System.out.format("%d vowels in string", count);
+		sc.close();
 	}
 }

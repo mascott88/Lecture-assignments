@@ -17,6 +17,7 @@ public class PrimeIndex {
 		}
 		//how to exclude whitespace primes in output ???
 		System.out.println(sb.toString());
+		sc.close();
 	}
 
 	public static boolean isPrime(int n) {
@@ -31,5 +32,5 @@ public class PrimeIndex {
 		} else {
 			return false;
 		}
-	}
+	}	
 }

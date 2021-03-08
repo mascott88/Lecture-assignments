@@ -3,7 +3,7 @@ package exceptions;
 public class BusinessException {
 
 	public boolean isValidPassportNumber(String passportNum) throws InvalidPassportException {
-		if(!passportNum.matches("[cC][0-9A-Za-z]{6,9}")) {
+		if(!passportNum.matches("[cC][0-9A-Za-z]{6,9}")) {			
 			throw new InvalidPassportException("Invalid Passport# (" + passportNum +")");
 		}
 		return true;

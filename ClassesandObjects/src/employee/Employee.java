@@ -1,4 +1,4 @@
-package business;
+package employee;
 
 public class Employee {
 	// Create Employee class with id,name,age,email
@@ -39,6 +39,10 @@ public class Employee {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public Employee( ) {
+
 	}
 
 	public Employee(int id, String name, int age) {

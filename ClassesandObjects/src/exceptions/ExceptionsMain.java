@@ -26,5 +26,6 @@ public class ExceptionsMain {
 		} catch (InvalidDriversLicenseException e) {
 			System.out.println(e.getMessage());
 		}
+		sc.close();//how to close scanner after exception ??? finally ???
 	}
 }

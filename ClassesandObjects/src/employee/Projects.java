@@ -1,8 +1,9 @@
-package business;
+package employee;
 
 public class Projects {
 	
 	private int projectId;
+
 	private String projectName;
 	private String clientName;
 	
@@ -23,5 +24,22 @@ public class Projects {
 	}
 	public void setClientName(String clientName) {
 		this.clientName = clientName;
+	}
+	public Projects( ) {
+
+	}
+	public Projects(int id ) {
+		this.projectId = id;
+
+	}
+	public Projects(int projectId, String projectName, String clientName) {
+		super();
+		this.projectId = projectId;
+		this.projectName = projectName;
+		this.clientName = clientName;
+	}
+	@Override //annotation
+	public String toString() {
+		return "Project [project id=" + projectId + ", project name=" + projectName + ", client name=" + clientName +"]";		
 	}
 }

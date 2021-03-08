@@ -35,10 +35,11 @@ public class Strings {
 			if (arr[i].length() % 2 == 0) {
 				sb2.append(Character.toUpperCase(arr[i].charAt(0))).append(arr[i].substring(1)).append(" ");
 			} else {
-				middle = (arr[i].length()%2)+(arr[i].length()/2);
-				System.out.println(sb2.append(arr[i].substring(0, middle-1))
-						.append(Character.toUpperCase(arr[i].charAt(arr[i].length()- middle))).append(arr[i].substring(middle)).append(" "));
-			
+				middle = (arr[i].length() % 2) + (arr[i].length() / 2);
+				System.out.println(sb2.append(arr[i].substring(0, middle - 1))
+						.append(Character.toUpperCase(arr[i].charAt(arr[i].length() - middle)))
+						.append(arr[i].substring(middle)).append(" "));
+
 			}
 			if (arr[i].length() > maxWordLetters) {
 				maxWordLetters = arr[i].length();
