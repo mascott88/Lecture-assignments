@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package regex;
+                                                   import java.util.Scanner;
 
 public class Regex {
 
