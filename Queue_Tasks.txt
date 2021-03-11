@@ -1,0 +1,7 @@
+ 1)Understand Queue. 
+	The Queue in Java is an interface that extends the Collections framework, and so inherits the basic Collection properties and operations: accepts 	only objects, is dynamic, re-sizable, and is iterable. Queues are designed for holdinig elements prior to processing and provides additional 	operations for insertion, extraction, and inspection (offer(), poll(), peek()). While queues normally follow a FIFO (first-in-first-out) procedure, 	where elements are removed from the head and new elements are inserted at the tail, different classes can implement the Queue differently.
+ 2)Find difference between LinkedList Vs PriorityQueue
+	-PriorityQueues implement the Queue interface but do not order their elements by FIFO, instead they preserve their natural order, or an order 	according to supplied comparator. PriorityQueues do not allow null elements.
+	-LinkedLists implement Dequeue as well as Queue, allowing insertion and deletion at both ends. It maintains order by FIFO and allows null elements. 
+ 3)Perform CRUD operations on Queue
+     Check (see Queue package in repository).

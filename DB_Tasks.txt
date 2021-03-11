@@ -1,0 +1,20 @@
+1)What is RDBMS?
+    RDBMS stands for "relational database model system", and it's a database that stores information in tables (rows and columns).	
+2)Why a developer should learn SQL?
+    Databases provide permanent storage for data, and learning SQL will provide developers with the knowledge and tools to retrieve and access this data. 
+3)What is Normalization?
+    Database normalization is a design pattern for databases to reduce redundant and duplicate data. It aims to help keep them organized and maintaninable. 
+5)ACID properties
+    The ACID properties ensure a safe way to modify the database using SQL transactions(DML). Following these four properties will maintain it's 	    integrity:
+        - Atomicity: ALL transactions will execute successfully, or NONE at all
+	- Consistency: constraints are enforced for every committed transaction. This means that the primary and foreign keys, data types, checks, 			NOT NULL, UNIQUE, etc. will be upheld. If any violation occurs, the transaction will be rolled back
+	- Isolation: If we have two transactions occuring at the same time (concurrently) and working on the same data, we should not have one transaction 		disturbing the other. Isolation essentially gives us some guarantee that concurrently running transactions do not affect one another.
+	- Durability: Durability means when a transaction is complete (it has been committed), the changes should be persisted to the database. If 			the system were to suddenly lose power or crash, upon restart of the system, the changes should still be there.
+6)Isolation levels
+    Isolation level refers to the degree in which two transactions will interfere with each other when modifying the same data. Lower levels of isolation     allow more users to access the data at the same time, while the more strict levels reduce this concurrency.
+7)What is postgresSQL? Data types in Postgressql.
+    PostgresSQL is an open-source RDBMS for data storage and a provider for the SQL language. Some example data types in PostgresSQL are: varchar, char, int, decimal, float, bool, date, and time.   
+8)What is Integrity Constraints?
+    Integrity Contraints are rules for data to follow to be allowed to enter the database. These contraints will maintain the integrity of the database. Some     example contraints are: NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, and DEFAULT.
+9)Start practicising writing some basic Select statements from hackerrank.com or sqlzoo.net or w3schools.com
+	Check.

@@ -14,13 +14,14 @@ public class JDBC {
 		try {
 			Class.forName("org.postgresql.Driver");
 			System.out.println("Driver loaded successfully");
+			
 			// Open Connection
 			String url = "jdbc:postgresql://localhost:5432/postgres";
 			String username = "postgres";
 			String password = "admin";
 			connection = DriverManager.getConnection(url, username, password);
 			System.out.println("Connection opened");
-
+			
 			// Create Statement
 			Statement statement = connection.createStatement();
 			String sql = "select p.id, p.name, p.city, p.gender, p.age, t.teamname, t.location "
@@ -40,8 +41,7 @@ public class JDBC {
 				System.out.print(" Age : "+resultSet.getInt("age"));
 				System.out.print(" TeamName : "+resultSet.getString("teamname"));
 				System.out.println(" Team Location : "+resultSet.getString("location"));
-			}
-			
+			}			
 			System.out.println("Results processed successfully");
 			
 		} catch (ClassNotFoundException e) {
